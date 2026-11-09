@@ -1,0 +1,5 @@
+delivery_status,lines,avg_profit_ratio_pct,profit_musd
+Late delivery,1644917,12.11,36.226
+Shipping on time,819096,11.98,17.997
+Advance shipping,407287,11.94,8.943
+Shipping canceled,128880,11.67,2.659

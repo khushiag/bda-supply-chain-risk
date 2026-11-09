@@ -1,0 +1,11 @@
+{
+  "raw_order_lines": 3000180,
+  "curated_order_lines": 3000180,
+  "dropped": 0,
+  "columns": 69,
+  "late_rate": 0.5482727703004486,
+  "disrupted_share": 0.05561699631355452,
+  "first_order": "2015-01-01 00:00:00",
+  "last_order": "2025-01-31 23:38:00",
+  "path": "hdfs://master:9000/dataco/curated/order_lines"
+}

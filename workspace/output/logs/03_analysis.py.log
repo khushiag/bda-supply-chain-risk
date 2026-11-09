@@ -1,0 +1,174 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793877382744
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793873804577_0004/
+	 user: root
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 172.18.0.4
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793877382744
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793873804577_0004/
+	 user: root
+>> Query 01_overall_kpis ...
+>> Query 01_overall_kpis done in 34.9s
+ order_lines  orders  late_pct  avg_delay_days  sales_musd  profit_musd
+     2871300 1045357     57.29           0.729      585.28        63.17
+>> Query 02_by_shipping_mode ...
+>> Query 02_by_shipping_mode done in 1.7s
+ shipping_mode  promised_days   lines  late_pct  avg_actual_days  avg_delay_when_late
+   First Class              1  440626    100.00             2.51                 1.51
+  Second Class              2  561794     79.83             3.14                 1.52
+      Same Day              0  154452     47.92             0.74                 1.54
+Standard Class              4 1714428     39.77             4.39                 1.56
+>> Query 03_by_market ...
+>> Query 03_by_market done in 1.4s
+      market  lines  late_pct  margin_pct
+      Europe 799297     57.69       12.11
+        USCA 409391     57.41       12.40
+Pacific Asia 657727     57.37       11.56
+       LATAM 819362     56.87       12.07
+      Africa 185523     56.84       12.09
+>> Query 04_by_region ...
+>> Query 04_by_region done in 1.7s
+      market    order_region  lines  late_pct  avg_congestion
+Pacific Asia       West Asia  95453     68.81           0.575
+      Africa  Central Africa  26887     66.46           0.530
+       LATAM       Caribbean 132059     64.78           0.409
+Pacific Asia    Central Asia   8974     64.56           0.426
+      Europe  Eastern Europe  62791     63.67           0.375
+      Europe  Western Europe 429903     63.48           0.532
+      Africa Southern Africa  18347     62.72           0.502
+Pacific Asia  Southeast Asia 151754     62.00           0.563
+       LATAM   South America 235642     59.91           0.375
+        USCA    South of USA  64150     59.88           0.542
+      Africa    North Africa  51348     59.04           0.429
+        USCA          Canada  15109     58.16           0.337
+>> Query 05_heatmap_region_mode ...
+>> Query 05_heatmap_region_mode done in 1.0s
+   order_region  shipping_mode  lines  late_pct
+         Canada       Same Day    477     49.06
+Central America       Same Day  22555     44.87
+ Western Europe   Second Class  86549     85.48
+ Southeast Asia       Same Day   7083     51.50
+Southern Africa Standard Class  11711     48.95
+      West Asia    First Class  15722    100.00
+  South America   Second Class  44917     82.32
+   Eastern Asia   Second Class  22342     81.43
+Southern Europe Standard Class  89906     28.96
+     South Asia    First Class  20612    100.00
+      US Center   Second Class  19355     77.06
+   South of USA   Second Class  13592     81.42
+>> Query 06_by_carrier ...
+>> Query 06_by_carrier done in 2.0s
+      market carrier_id      carrier_name  reliability  lines  late_pct  worst_in_market
+      Africa       CR13  Africa Freight A        0.824  62247     68.58                1
+      Africa       CR14  Africa Freight B        0.850  61976     60.35                2
+      Africa       CR15  Africa Freight C        0.917  61300     41.37                3
+      Europe       CR02  Europe Freight B        0.824 266498     70.57                1
+      Europe       CR03  Europe Freight C        0.861 266464     58.98                2
+      Europe       CR01  Europe Freight A        0.916 266335     43.50                3
+       LATAM       CR04   LATAM Freight A        0.853 273671     71.62                1
+       LATAM       CR06   LATAM Freight C        0.922 272695     50.45                2
+       LATAM       CR05   LATAM Freight B        0.930 272996     48.49                3
+Pacific Asia       CR08 Pacific Freight B        0.833 220279     73.80                1
+Pacific Asia       CR09 Pacific Freight C        0.883 219364     58.46                2
+Pacific Asia       CR07 Pacific Freight A        0.954 218084     39.69                3
+>> Query 07_by_supplier ...
+>> Query 07_by_supplier done in 1.1s
+supplier_id supplier_country  base_lead_days  avg_lead_days  lines  late_pct
+       SP31          Vietnam              24           24.0   5979     63.79
+       SP40          Germany              23           23.0  22211     62.92
+       SP36          Germany              23           23.1   6332     62.29
+       SP15           Mexico              24           24.0 180957     61.86
+       SP16            India              22           22.0 318348     60.79
+       SP08           Turkey              20           20.0  90982     59.72
+       SP39          Vietnam              19           19.0  13246     59.70
+       SP26       Bangladesh              20           20.0 139119     59.56
+       SP35            India              24           24.0   5413     59.30
+       SP22           Mexico              21           21.1   6514     59.15
+       SP29          Vietnam              19           19.0 115978     59.12
+       SP33           Turkey              19           19.0 186969     59.05
+>> Query 08_by_category_top20 ...
+>> Query 08_by_category_top20 done in 0.9s
+       category_name  lines  late_pct  sales_musd
+              Cleats 390817     56.06       70.55
+      Men's Footwear 353463     61.37       45.94
+     Women's Apparel 334251     57.09       50.04
+Indoor/Outdoor Games 306921     55.71       45.96
+             Fishing 275859     58.12      110.34
+        Water Sports 247295     57.65       49.55
+    Camping & Hiking 218611     55.50       65.58
+    Cardio Equipment 198621     58.03       58.73
+       Shop By Sport 174812     57.63       20.83
+         Electronics  50269     59.42        5.94
+         Accessories  28180     58.35        2.13
+          Golf Balls  23303     57.06        1.21
+>> Query 09_monthly_trend ...
+>> Query 09_monthly_trend done in 1.0s
+order_ym  lines  late_pct  avg_congestion  avg_weather
+ 2015-01  10508     53.18           0.237        0.420
+ 2015-02   9678     54.98           0.237        0.441
+ 2015-03  10621     52.13           0.231        0.416
+ 2015-04  10137     48.82           0.219        0.377
+ 2015-05  10745     48.66           0.239        0.319
+ 2015-06  10048     49.18           0.338        0.232
+ 2015-07  10610     51.07           0.331        0.210
+ 2015-08  10293     52.36           0.340        0.230
+ 2015-09  10182     54.50           0.345        0.264
+ 2015-10  10355     60.35           0.352        0.336
+ 2015-11  10230     54.10           0.373        0.326
+ 2015-12  10689     51.33           0.370        0.272
+>> Query 10_weather_x_congestion ...
+>> Query 10_weather_x_congestion done in 0.9s
+ weather congestion   lines  late_pct
+   1 low      1 low  574686     39.89
+   1 low   2 medium 1031209     53.41
+   1 low     3 high  180299     70.02
+2 medium      1 low  390270     56.01
+2 medium   2 medium  529056     71.76
+2 medium     3 high   77921     86.05
+  3 high      1 low   43097     75.82
+  3 high   2 medium   40779     89.98
+  3 high     3 high    3983     99.90
+>> Query 11_by_disruption ...
+>> Query 11_by_disruption done in 1.1s
+     disruption_type  disruption_severity   lines  late_pct  avg_delay_days
+       Customs delay                    3    1167    100.00            2.46
+     Cyclone / storm                    3   30186     99.79            2.47
+     Labour shortage                    3     373     99.73            2.47
+        Port closure                    3   19046     99.55            2.47
+            Lockdown                    3   16826     99.44            2.46
+         Port strike                    2   25441     96.88            2.38
+Rail / road blockage                    2   16005     95.52            2.34
+     Labour shortage                    1   19211     83.68            1.18
+       Customs delay                    1   31698     79.65            1.10
+                None                    0 2711347     55.19            0.65
+>> Query 12_profit_impact ...
+>> Query 12_profit_impact done in 1.1s
+  delivery_status   lines  avg_profit_ratio_pct  profit_musd
+    Late delivery 1644917                 12.11       36.226
+ Shipping on time  819096                 11.98       17.997
+ Advance shipping  407287                 11.94        8.943
+Shipping canceled  128880                 11.67        2.659
+>> Query 13_yearly_mode_trend ...
+>> Query 13_yearly_mode_trend done in 1.1s
+ order_year  shipping_mode  lines  late_pct
+       2015    First Class  19561    100.00
+       2015       Same Day   6417     39.63
+       2015   Second Class  24140     75.51
+       2015 Standard Class  73978     33.60
+       2016    First Class  38821    100.00
+       2016       Same Day  13310     42.34
+       2016   Second Class  48548     76.16
+       2016 Standard Class 147486     34.71
+       2017    First Class  53825    100.00
+       2017       Same Day  19353     42.96
+       2017   Second Class  69184     76.33
+       2017 Standard Class 212643     35.59

@@ -1,0 +1,9 @@
+{
+  "seed_rows": 180519,
+  "generated_rows": 3000180,
+  "scale_factor": 16.619,
+  "raw_csv_size_mb": 1417.5,
+  "noise": 0.4,
+  "all_checks_within_2": true,
+  "hdfs_raw_path": "hdfs://master:9000/dataco/raw"
+}

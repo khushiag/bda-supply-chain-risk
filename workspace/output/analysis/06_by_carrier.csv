@@ -1,0 +1,16 @@
+market,carrier_id,carrier_name,reliability,lines,late_pct,worst_in_market
+Africa,CR13,Africa Freight A,0.824,62247,68.58,1
+Africa,CR14,Africa Freight B,0.85,61976,60.35,2
+Africa,CR15,Africa Freight C,0.917,61300,41.37,3
+Europe,CR02,Europe Freight B,0.824,266498,70.57,1
+Europe,CR03,Europe Freight C,0.861,266464,58.98,2
+Europe,CR01,Europe Freight A,0.916,266335,43.5,3
+LATAM,CR04,LATAM Freight A,0.853,273671,71.62,1
+LATAM,CR06,LATAM Freight C,0.922,272695,50.45,2
+LATAM,CR05,LATAM Freight B,0.93,272996,48.49,3
+Pacific Asia,CR08,Pacific Freight B,0.833,220279,73.8,1
+Pacific Asia,CR09,Pacific Freight C,0.883,219364,58.46,2
+Pacific Asia,CR07,Pacific Freight A,0.954,218084,39.69,3
+USCA,CR10,USCA Freight A,0.824,136381,68.0,1
+USCA,CR11,USCA Freight B,0.853,136836,58.6,2
+USCA,CR12,USCA Freight C,0.896,136174,45.61,3

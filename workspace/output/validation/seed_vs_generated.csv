@@ -1,0 +1,18 @@
+metric,seed,generated,difference,unit,within_2
+late_rate,0.5483,0.5483,-0.0,pp,True
+canceled_share,0.043,0.043,0.0,pp,True
+mean_item_price,141.2325,141.2467,0.01,% (relative),True
+mean_quantity,2.1276,2.1275,-0.01,% (relative),True
+mode_share::Standard Class,0.5969,0.5969,0.0,pp,True
+late_rate::Standard Class,0.3807,0.3807,0.0,pp,True
+mode_share::Same Day,0.0539,0.0539,-0.0,pp,True
+late_rate::Same Day,0.4574,0.4574,-0.0,pp,True
+mode_share::First Class,0.1541,0.1541,0.0,pp,True
+late_rate::First Class,0.9532,0.9531,-0.01,pp,True
+mode_share::Second Class,0.1951,0.1951,-0.0,pp,True
+late_rate::Second Class,0.7663,0.7663,0.0,pp,True
+market_share::LATAM,0.2858,0.2858,-0.0,pp,True
+market_share::Africa,0.0643,0.0644,0.0,pp,True
+market_share::Europe,0.2784,0.2784,0.0,pp,True
+market_share::Pacific Asia,0.2286,0.2285,-0.01,pp,True
+market_share::USCA,0.1429,0.143,0.0,pp,True

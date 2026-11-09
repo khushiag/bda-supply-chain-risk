@@ -1,0 +1,56 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793876860729
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793873804577_0003/
+	 user: root
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 172.18.0.3
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793876860729
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793873804577_0003/
+	 user: root
+>> Ranking risk segments ...
+      market    order_region shipping_mode  lines  late_lines     revenue     profit  late_pct  excess_late_lines  margin_pct
+       LATAM Central America   First Class  69560       69560 12592812.59 1527039.25    100.00            29710.0       12.13
+      Europe  Western Europe   First Class  68243       68243 13314331.11 1870096.11    100.00            29148.0       14.05
+      Europe  Western Europe  Second Class  86549       73983 16725772.68 2038386.05     85.48            24401.0       12.19
+       LATAM Central America  Second Class  87158       65799 15523391.57 1902046.14     75.49            15868.0       12.25
+       LATAM   South America   First Class  35750       35750  6366071.64  850667.00    100.00            15269.0       13.36
+       LATAM   South America  Second Class  44917       36976  8034096.35 1074332.73     82.32            11244.0       13.37
+Pacific Asia  Southeast Asia   First Class  24580       24580  4450740.57  527438.74    100.00            10499.0       11.85
+      Europe Southern Europe   First Class  24320       24320  4826125.83  616788.86    100.00            10388.0       12.78
+      Europe Northern Europe   First Class  22644       22644  4429200.87  464542.60    100.00             9672.0       10.49
+Pacific Asia         Oceania   First Class  21124       21124  3786188.64  557705.15    100.00             9022.0       14.73
+Pacific Asia      South Asia   First Class  20612       20612  3768789.47  370349.12    100.00             8804.0        9.83
+       LATAM       Caribbean   First Class  18833       18833  3315868.75  473506.68    100.00             8044.0       14.28
+>> Ranking risk segments done in 2.0s
+>> What-if scoring of every segment on every shipping mode ...
+>> What-if scoring of every segment on every shipping mode done in 13.2s
+RECOMMENDED SWITCHES
+       market    order_region current_mode       alt_mode  alt_days  promise_change_days  lines  late_pct  pred_late_rate_now  pred_late_rate  avoided_late_lines  margin_before_pct  margin_after_pct  margin_change_pp
+       LATAM Central America  First Class Standard Class         4                    3  69560    100.00              0.9960          0.3412             45545.0            12.0991           15.0991               3.0
+       LATAM Central America Second Class Standard Class         4                    2  87158     75.49              0.7680          0.3454             36826.0            12.2860           13.7860               1.5
+      Europe  Western Europe  First Class Standard Class         4                    3  68243    100.00              0.9979          0.4661             36290.0            14.6671           17.6671               3.0
+      Europe  Western Europe Second Class Standard Class         4                    2  86549     85.48              0.8524          0.4625             33741.0            11.4045           12.9045               1.5
+       LATAM   South America  First Class Standard Class         4                    3  35750    100.00              0.9975          0.4248             20474.0            13.6769           16.6769               3.0
+       LATAM   South America Second Class Standard Class         4                    2  44917     82.32              0.8318          0.4342             17861.0            13.4166           14.9166               1.5
+      Europe Southern Europe  First Class Standard Class         4                    3  24320    100.00              0.9944          0.2965             16973.0            12.6819           15.6819               3.0
+      Europe Northern Europe  First Class Standard Class         4                    3  22644    100.00              0.9939          0.2821             16119.0            10.5552           13.5552               3.0
+Pacific Asia         Oceania  First Class Standard Class         4                    3  21124    100.00              0.9937          0.3184             14264.0            15.3805           18.3805               3.0
+Pacific Asia      South Asia  First Class Standard Class         4                    3  20612    100.00              0.9940          0.3344             13594.0             9.7099           12.7099               3.0
+Pacific Asia  Southeast Asia  First Class Standard Class         4                    3  24580    100.00              0.9972          0.4635             13117.0            12.2397           15.2397               3.0
+       LATAM       Caribbean  First Class Standard Class         4                    3  18833    100.00              0.9982          0.4968              9443.0            14.2748           17.2748               3.0
+>> Scheduling-buffer analysis ...
+ shipping_mode   lines  late_lines  late_by_1_day  late_by_le_2_days  late_pct_now  late_pct_with_1day_buffer  late_pct_with_2day_buffer
+Standard Class 1714428      681807         352790             628320         39.77                      19.19                       3.12
+      Same Day  154452       74020          39397              68845         47.92                      22.42                       3.35
+   First Class  440626      440626         241843             415658        100.00                      45.11                       5.67
+  Second Class  561794      448464         243777             420944         79.83                      36.43                       4.90
+>> Scheduling-buffer analysis done in 1.2s

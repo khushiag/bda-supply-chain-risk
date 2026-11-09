@@ -1,0 +1,16 @@
+{
+  "overall_late_rate": 0.5728823181137463,
+  "total_late_lines": 1644917,
+  "segments_analysed": 12,
+  "segments_with_feasible_switch": 12,
+  "avoidable_late_lines_mode_switch": 274247.0,
+  "avoidable_share_of_all_late_pct": 16.67,
+  "late_lines_fixed_by_1day_buffer": 877807,
+  "mode_cost_assumption_pct": {
+    "Standard Class": 0.0,
+    "Second Class": 1.5,
+    "First Class": 3.0,
+    "Same Day": 6.0
+  },
+  "max_margin_drop_pp": 0.5
+}

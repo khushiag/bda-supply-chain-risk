@@ -1,0 +1,24 @@
+market,order_region,lines,late_pct,avg_congestion
+Pacific Asia,West Asia,95453,68.81,0.575
+Africa,Central Africa,26887,66.46,0.53
+LATAM,Caribbean,132059,64.78,0.409
+Pacific Asia,Central Asia,8974,64.56,0.426
+Europe,Eastern Europe,62791,63.67,0.375
+Europe,Western Europe,429903,63.48,0.532
+Africa,Southern Africa,18347,62.72,0.502
+Pacific Asia,Southeast Asia,151754,62.0,0.563
+LATAM,South America,235642,59.91,0.375
+USCA,South of USA,64150,59.88,0.542
+Africa,North Africa,51348,59.04,0.429
+USCA,Canada,15109,58.16,0.337
+USCA,West of USA,126275,58.02,0.51
+Pacific Asia,Eastern Asia,115923,57.0,0.499
+USCA,East of USA,110015,57.0,0.477
+USCA,US Center,93842,55.27,0.438
+LATAM,Central America,451661,52.97,0.25
+Pacific Asia,South Asia,123878,52.56,0.36
+Africa,West Africa,59309,51.53,0.327
+Africa,East Africa,29632,51.3,0.324
+Pacific Asia,Oceania,161745,49.83,0.355
+Europe,Southern Europe,150159,48.79,0.281
+Europe,Northern Europe,156444,47.9,0.262

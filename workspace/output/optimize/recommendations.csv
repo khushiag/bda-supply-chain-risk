@@ -1,0 +1,13 @@
+market,order_region,current_mode,alt_mode,alt_days,promise_change_days,lines,late_pct,pred_late_rate_now,pred_late_rate,avoided_late_lines,margin_before_pct,margin_after_pct,margin_change_pp
+LATAM,Central America,First Class,Standard Class,4,3,69560,100.0,0.996,0.3412,45545.0,12.0991,15.0991,3.0
+LATAM,Central America,Second Class,Standard Class,4,2,87158,75.49,0.768,0.3454,36826.0,12.286,13.786,1.5
+Europe,Western Europe,First Class,Standard Class,4,3,68243,100.0,0.9979,0.4661,36290.0,14.6671,17.6671,3.0
+Europe,Western Europe,Second Class,Standard Class,4,2,86549,85.48,0.8524,0.4625,33741.0,11.4045,12.9045,1.5
+LATAM,South America,First Class,Standard Class,4,3,35750,100.0,0.9975,0.4248,20474.0,13.6769,16.6769,3.0
+LATAM,South America,Second Class,Standard Class,4,2,44917,82.32,0.8318,0.4342,17861.0,13.4166,14.9166,1.5
+Europe,Southern Europe,First Class,Standard Class,4,3,24320,100.0,0.9944,0.2965,16973.0,12.6819,15.6819,3.0
+Europe,Northern Europe,First Class,Standard Class,4,3,22644,100.0,0.9939,0.2821,16119.0,10.5552,13.5552,3.0
+Pacific Asia,Oceania,First Class,Standard Class,4,3,21124,100.0,0.9937,0.3184,14264.0,15.3805,18.3805,3.0
+Pacific Asia,South Asia,First Class,Standard Class,4,3,20612,100.0,0.994,0.3344,13594.0,9.7099,12.7099,3.0
+Pacific Asia,Southeast Asia,First Class,Standard Class,4,3,24580,100.0,0.9972,0.4635,13117.0,12.2397,15.2397,3.0
+LATAM,Caribbean,First Class,Standard Class,4,3,18833,100.0,0.9982,0.4968,9443.0,14.2748,17.2748,3.0

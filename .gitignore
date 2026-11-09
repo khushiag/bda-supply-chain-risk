@@ -1,0 +1,4 @@
+workspace/data/*.csv
+__pycache__/
+*.pyc
+project_tree.txt

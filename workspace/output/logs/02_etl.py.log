@@ -1,0 +1,97 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793020450756
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793015372235_0002/
+	 user: root
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 172.18.0.4
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793020450756
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793015372235_0002/
+	 user: root
+>> Reading raw tables ...
+>> Reading raw tables done in 10.8s
+>> Cleaning ...
+>> Cleaning done in 4.1s
+>> Writing curated Parquet (partitioned by order_year) ...
+>> Writing curated Parquet (partitioned by order_year) done in 110.7s
+>> Checking curated table ...
+root
+ |-- order_id: integer (nullable = true)
+ |-- supplier_id: string (nullable = true)
+ |-- carrier_id: string (nullable = true)
+ |-- order_item_id: integer (nullable = true)
+ |-- source_order_id: integer (nullable = true)
+ |-- order_ts: timestamp (nullable = true)
+ |-- customer_id: integer (nullable = true)
+ |-- customer_segment: string (nullable = true)
+ |-- customer_city: string (nullable = true)
+ |-- customer_state: string (nullable = true)
+ |-- customer_country: string (nullable = true)
+ |-- type: string (nullable = true)
+ |-- market: string (nullable = true)
+ |-- order_region: string (nullable = true)
+ |-- order_country: string (nullable = true)
+ |-- order_city: string (nullable = true)
+ |-- order_state: string (nullable = true)
+ |-- order_zipcode: string (nullable = true)
+ |-- latitude: double (nullable = true)
+ |-- longitude: double (nullable = true)
+ |-- department_id: integer (nullable = true)
+ |-- department_name: string (nullable = true)
+ |-- category_id: integer (nullable = true)
+ |-- category_name: string (nullable = true)
+ |-- product_card_id: integer (nullable = true)
+ |-- product_category_id: string (nullable = true)
+ |-- order_item_cardprod_id: string (nullable = true)
+ |-- product_name: string (nullable = true)
+ |-- product_image: string (nullable = true)
+ |-- product_status: string (nullable = true)
+ |-- product_price: double (nullable = true)
+ |-- order_item_product_price: double (nullable = true)
+ |-- order_item_quantity: integer (nullable = true)
+ |-- order_item_discount_rate: double (nullable = true)
+ |-- order_item_discount: double (nullable = true)
+ |-- sales: double (nullable = true)
+ |-- order_item_total: double (nullable = true)
+ |-- order_item_profit_ratio: double (nullable = true)
+ |-- order_profit_per_order: double (nullable = true)
+ |-- benefit_per_order: string (nullable = true)
+ |-- sales_per_customer: string (nullable = true)
+ |-- order_status: string (nullable = true)
+ |-- shipping_mode: string (nullable = true)
+ |-- warehouse_id: string (nullable = true)
+ |-- delivery_status: string (nullable = true)
+ |-- days_scheduled: integer (nullable = true)
+ |-- days_real: integer (nullable = true)
+ |-- shipping_ts: timestamp (nullable = true)
+ |-- late_delivery_risk: integer (nullable = true)
+ |-- supplier_lead_time_days: double (nullable = true)
+ |-- weather_severity: double (nullable = true)
+ |-- port_congestion_index: double (nullable = true)
+ |-- carrier_name: string (nullable = true)
+ |-- carrier_reliability: double (nullable = true)
+ |-- supplier_name: string (nullable = true)
+ |-- supplier_country: string (nullable = true)
+ |-- base_lead_time_days: integer (nullable = true)
+ |-- supplier_quality: double (nullable = true)
+ |-- disruption_severity: integer (nullable = true)
+ |-- disruption_type: string (nullable = true)
+ |-- active_events: long (nullable = true)
+ |-- disruption_flag: integer (nullable = true)
+ |-- order_month: integer (nullable = true)
+ |-- order_quarter: integer (nullable = true)
+ |-- order_dow: integer (nullable = true)
+ |-- order_ym: string (nullable = true)
+ |-- is_canceled: boolean (nullable = true)
+ |-- delay_days: integer (nullable = true)
+ |-- order_year: integer (nullable = true)
+{'raw_order_lines': 3000180, 'curated_order_lines': 3000180, 'dropped': 0, 'columns': 69, 'late_rate': 0.5482727703004486, 'disrupted_share': 0.05561699631355452, 'first_order': datetime.datetime(2015, 1, 1, 0, 0), 'last_order': datetime.datetime(2025, 1, 31, 23, 38), 'path': 'hdfs://master:9000/dataco/curated/order_lines'}
+>> Checking curated table done in 1.5s

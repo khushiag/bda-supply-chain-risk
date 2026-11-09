@@ -1,0 +1,5 @@
+shipping_mode,lines,late_lines,late_by_1_day,late_by_le_2_days,late_pct_now,late_pct_with_1day_buffer,late_pct_with_2day_buffer
+Standard Class,1714428,681807,352790,628320,39.77,19.19,3.12
+Same Day,154452,74020,39397,68845,47.92,22.42,3.35
+First Class,440626,440626,241843,415658,100.0,45.11,5.67
+Second Class,561794,448464,243777,420944,79.83,36.43,4.9

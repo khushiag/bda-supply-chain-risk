@@ -1,0 +1,15 @@
+{
+  "01_overall_kpis": 34.9,
+  "02_by_shipping_mode": 1.7,
+  "03_by_market": 1.4,
+  "04_by_region": 1.7,
+  "05_heatmap_region_mode": 1.0,
+  "06_by_carrier": 2.0,
+  "07_by_supplier": 1.1,
+  "08_by_category_top20": 0.9,
+  "09_monthly_trend": 1.0,
+  "10_weather_x_congestion": 0.9,
+  "11_by_disruption": 1.1,
+  "12_profit_impact": 1.1,
+  "13_yearly_mode_trend": 1.1
+}

@@ -1,0 +1,52 @@
+x-node: &node
+  build: .
+  image: bda-hadoop-spark:1.0
+  networks: [hadoop]
+  restart: "no"
+
+services:
+  master:
+    <<: *node
+    container_name: master
+    hostname: master
+    environment: [ROLE=master]
+    ports:
+      - "9870:9870"    # HDFS NameNode UI
+      - "8088:8088"    # YARN ResourceManager UI
+      - "4040:4040"    # Spark application UI (while a job runs)
+      - "18080:18080"  # Spark History Server
+    volumes:
+      - namenode:/data/namenode
+      - ./workspace:/workspace   # your code + dataset, shared with Windows
+
+  worker1:
+    <<: *node
+    container_name: worker1
+    hostname: worker1
+    environment: [ROLE=worker]
+    ports:
+      - "8042:8042"    # NodeManager UI
+      - "9864:9864"    # DataNode UI
+    volumes:
+      - datanode1:/data/datanode
+    depends_on: [master]
+
+  worker2:
+    <<: *node
+    container_name: worker2
+    hostname: worker2
+    environment: [ROLE=worker]
+    ports:
+      - "8043:8042"
+      - "9865:9864"
+    volumes:
+      - datanode2:/data/datanode
+    depends_on: [master]
+
+networks:
+  hadoop:
+
+volumes:
+  namenode:
+  datanode1:
+  datanode2:

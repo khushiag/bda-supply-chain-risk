@@ -1,0 +1,16 @@
+Saved 15 charts to /workspace/output/figures:
+   01_seed_vs_generated.png
+   02_late_by_shipping_mode.png
+   03_late_by_market.png
+   04_heatmap_region_mode.png
+   05_carriers.png
+   06_monthly_trend.png
+   07_weather_congestion.png
+   08_disruptions.png
+   09_model_comparison.png
+   10_roc_curves.png
+   11_confusion_matrices.png
+   12_feature_importance_gbt.png
+   12_feature_importance_rf.png
+   13_mode_switch_recommendations.png
+   14_schedule_buffer.png

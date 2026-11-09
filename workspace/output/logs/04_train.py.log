@@ -1,0 +1,90 @@
+	 client token: N/A
+	 diagnostics: AM container is launched, waiting for AM container to Register with RM
+	 ApplicationMaster host: N/A
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793022258356
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793015372235_0004/
+	 user: root
+	 client token: N/A
+	 diagnostics: N/A
+	 ApplicationMaster host: 172.18.0.3
+	 ApplicationMaster RPC port: -1
+	 queue: root.default
+	 start time: 1793022258356
+	 final status: UNDEFINED
+	 tracking URL: http://master:8088/proxy/application_1793015372235_0004/
+	 user: root
+Features used: ['shipping_mode', 'market', 'order_region', 'category_name', 'customer_segment', 'type', 'department_name', 'carrier_id', 'supplier_id', 'warehouse_id', 'days_scheduled', 'order_month', 'order_dow', 'order_item_quantity', 'order_item_product_price', 'order_item_discount_rate', 'sales', 'carrier_reliability', 'supplier_lead_time_days', 'weather_severity', 'port_congestion_index', 'disruption_flag', 'disruption_severity']
+Excluded (leakage): ['days_real', 'shipping_ts', 'delivery_status', 'delay_days', 'order_status', 'order_profit_per_order', 'benefit_per_order', 'sales_per_customer']
+Split sizes: {'train': 2016037, 'validation': 276361, 'test': 578902}
+>> Training Logistic Regression ...
+>> Training Logistic Regression done in 46.7s
+>> Evaluating Logistic Regression ...
+>> Evaluating Logistic Regression done in 19.5s
+{
+ "key": "lr",
+ "model": "Logistic Regression",
+ "train_rows_used": 2016037,
+ "train_seconds": 46.7,
+ "threshold": 0.44,
+ "auc": 0.8919,
+ "test_tp": 283342,
+ "test_fp": 65323,
+ "test_fn": 50119,
+ "test_tn": 180118,
+ "test_precision": 0.8126,
+ "test_recall": 0.8497,
+ "test_f1": 0.8308,
+ "test_accuracy": 0.8006,
+ "test_f1_at_0.5": 0.8267,
+ "valid_f1": 0.8271
+}
+>> Training Random Forest ...
+>> Training Random Forest done in 218.2s
+>> Evaluating Random Forest ...
+>> Evaluating Random Forest done in 22.0s
+{
+ "key": "rf",
+ "model": "Random Forest",
+ "train_rows_used": 2016037,
+ "train_seconds": 218.2,
+ "threshold": 0.395,
+ "auc": 0.8816,
+ "test_tp": 289802,
+ "test_fp": 79322,
+ "test_fn": 43659,
+ "test_tn": 166119,
+ "test_precision": 0.7851,
+ "test_recall": 0.8691,
+ "test_f1": 0.825,
+ "test_accuracy": 0.7876,
+ "test_f1_at_0.5": 0.8175,
+ "valid_f1": 0.8207
+}
+>> Training Gradient-Boosted Trees ...
+>> Training Gradient-Boosted Trees done in 196.7s
+>> Evaluating Gradient-Boosted Trees ...
+>> Evaluating Gradient-Boosted Trees done in 13.6s
+{
+ "key": "gbt",
+ "model": "Gradient-Boosted Trees",
+ "train_rows_used": 2016037,
+ "train_seconds": 196.7,
+ "threshold": 0.42,
+ "auc": 0.891,
+ "test_tp": 286506,
+ "test_fp": 70465,
+ "test_fn": 46955,
+ "test_tn": 174976,
+ "test_precision": 0.8026,
+ "test_recall": 0.8592,
+ "test_f1": 0.8299,
+ "test_accuracy": 0.7972,
+ "test_f1_at_0.5": 0.8254,
+ "valid_f1": 0.8262
+}
+>> Saving best model (Logistic Regression) to HDFS ...
+>> Saving best model (Logistic Regression) to HDFS done in 5.9s
+BEST: Logistic Regression  test F1 = 0.8308  (target 0.80)

@@ -1,0 +1,49 @@
+{
+  "best_model": "Logistic Regression",
+  "key": "lr",
+  "threshold": 0.44,
+  "test_f1": 0.8307614722206748,
+  "target_f1": 0.8,
+  "target_met": "True",
+  "split_sizes": {
+    "train": 2016037,
+    "validation": 276361,
+    "test": 578902
+  },
+  "features": [
+    "shipping_mode",
+    "market",
+    "order_region",
+    "category_name",
+    "customer_segment",
+    "type",
+    "department_name",
+    "carrier_id",
+    "supplier_id",
+    "warehouse_id",
+    "days_scheduled",
+    "order_month",
+    "order_dow",
+    "order_item_quantity",
+    "order_item_product_price",
+    "order_item_discount_rate",
+    "sales",
+    "carrier_reliability",
+    "supplier_lead_time_days",
+    "weather_severity",
+    "port_congestion_index",
+    "disruption_flag",
+    "disruption_severity"
+  ],
+  "excluded_leaky": [
+    "days_real",
+    "shipping_ts",
+    "delivery_status",
+    "delay_days",
+    "order_status",
+    "order_profit_per_order",
+    "benefit_per_order",
+    "sales_per_customer"
+  ],
+  "model_path": "hdfs://master:9000/dataco/models/best_model"
+}
